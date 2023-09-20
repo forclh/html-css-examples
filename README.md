@@ -8,3 +8,4 @@
 5. [方向感应卡片](https://www.bilibili.com/video/BV1834y147DV/?spm_id_from=333.999.0.0&vd_source=8178530fbcba3b01db39ea80d35da960)
 6. [视觉冲击卡片](https://www.bilibili.com/video/BV1qM4y1x7nF/?spm_id_from=333.999.0.0&vd_source=8178530fbcba3b01db39ea80d35da960)
 7. [日夜切换按钮](https://www.bilibili.com/video/BV19g4y1N7bu/?spm_id_from=333.999.0.0&vd_source=8178530fbcba3b01db39ea80d35da960)
+8. [数据雨](https://www.youtube.com/watch?v=Bl37L37Up5w)
