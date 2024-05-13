@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #282A36;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  /* 这是form表单在body元素内居中 */
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-item {
+  margin-bottom: 12px;
+}
+
+/* 搞定文本框的统一样式 */
+.txt {
+  /* 外边框，不占盒模型，与border相比只有视觉效果 */
+  /* 文本框的默认样式中，聚焦时会出现有颜色的outline */
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  /* 首行缩进 */
+  /* text-indent: 10px; */
+}
+
+
+/* 聚焦的样式 */
+.txt:focus {
+  outline: 2px solid #5f8be8;
+}
+
+/* 单独设置特殊情况 */
+select.txt {
+  height: 100px;
+  padding: 10px;
+}
+
+textarea.txt {
+  height: 100px;
+  padding: 10px;
+  /* 多行文本是否可以被用户改变尺寸vertical/horizonta/both */
+  resize: none;
+}
+
+/* 按钮的统一样式 */
+button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #5f8be8;
+  color: #fff;
+  /* 鼠标样式 */
+  cursor: pointer;
+}
+/* 按钮的状态 */
+button:hover {
+  background-color: #7fa1eb;
+}
+/* 选中禁用状态的按钮 */
+button:disabled {
+  background-color: #a6bef3;
+  /* 修改鼠标样式为禁用 */
+  cursor: not-allowed;
+}
+
+/* 统一处理浮动 */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container .title {
+  margin-right: 10px;
+}
+
+/* 处理特殊样式 */
+.verify .txt {
+  width: 170px;
+}
+
+.policy {
+  font-size: 12px;
+}
+
+.policy span {
+  /* 这个属性只有在几个行盒（行块盒）在垂直方向上没有对其时使用 */
+  /* 具体的属性值可以调 */
+  vertical-align: 2px;
+}
+
+/* 单选、多选选中状态 */
+label {
+  cursor: pointer;
+}
+
+label span {
+  color: #ccc;
+}
+
+/* 单选或者多选被选中的状态 */
+label input:checked+span {
+  color: #333;
+}
+
+/* 提示文本伪元素 */
+.txt::placeholder {
+  color: #ccc;
+}
+
+.txt:focus::placeholder {
+  color: #333;
+}
