@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  /* outline: 1px solid; */
+  width: 230px;
+  height: 140px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.cover {
+  width: 230px;
+  height: 140px;
+}
+
+.item .aside {
+  /* 绝对定位会导致宽高自动 */
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  bottom: 0;
+  left: 0;
+  color: white;
+  /* 单行文本居中设置行高为自身高度 */
+  line-height: 20px;
+  padding: 0 10px;
+}
+
+.aside .number {
+  float: left;
+}
+
+.aside .date {
+  float: right;
+}
+
+
+.aside .number::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  /* outline: 1px solid red; */
+  /* before伪元素默认为行盒无法设置宽高 */
+  display: inline-block;  /*行块盒不会独占一行挤掉文字*/
+  background: url(../assets/icons.png) no-repeat -255px -63px;
+  /* 用于对 inline、inline-block 或 table-cell 元素进行垂直对齐。 */
+  vertical-align: -3px;
+  margin-right: 3px;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.modal .play {
+  /* 所有绝对定位和浮动的元素会自动变为display:block */
+  position: absolute;
+  background: url(../assets/icons.png) no-repeat -191px -63px;
+  /* outline: 1px solid; */
+  width: 42px;
+  height: 42px;
+  /* 绝对定位居中 */
+  left: 50%;
+  top: 50%;
+  margin-top: -21px;
+  margin-left: -21px;
+}
