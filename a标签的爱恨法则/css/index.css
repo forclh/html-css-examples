@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  margin-top: 30px;
+  text-align: center;
+}
+.nav a {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+/* 
+设置超链接的样式：
+鼠标移入时背景色为 fae9f1
+鼠标按下时背景色为 7f8386，文字色为 fff
+访问过的超链接背景色为 d0c3bb
+未访问过的超链接背景色为 c2cdd3
+*/
+
+.nav a:link {
+  background: #c2cdd3;
+}
+
+.nav a:visited {
+  background: #d0c3bb;
+}
+
+.nav a:hover {
+  background: #fae9f1;
+}
+
+.nav a:active {
+  background: #7f8386;
+  color: #fff;
+}
